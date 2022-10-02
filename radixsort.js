@@ -31,11 +31,11 @@ const digitCount =(num)=>{
      digitBuckets[digit].push(nums[i]); 
     }
     //reassign the newly array
-    nums = [].concat(...digitBuckets);
+    nums.length = 0; 
+    nums.push.apply(nums, [].concat(...digitBuckets));
   }
 
   return nums;
  };
 
- radixSort([234,5456,13246,657]);
- 
+ radixSort([2,0,2,1,1,0]);
