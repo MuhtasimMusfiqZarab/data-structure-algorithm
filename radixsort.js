@@ -19,7 +19,7 @@ const digitCount =(num)=>{
  }
 
  const radixSort = (nums) =>{
-  let maxDigitCount = mostDigits(num);
+  let maxDigitCount = mostDigits(nums);
 
   for (let k = 0; k < maxDigitCount; k++) {
     //make the buckets
